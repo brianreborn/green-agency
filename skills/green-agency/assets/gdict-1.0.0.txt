@@ -1,0 +1,32 @@
+GDICT/1
+ver=1.0.0
+# id   kind   phrase
+# Static control-plane table — no human prose.
+e00  enum  STATELESS_CHAT
+e01  enum  AGY_SANDBOX
+e02  enum  SUPERGROK_ENGINE
+e10  enum  NONE
+e11  enum  SYSTEM_PROMPT_ENFORCED
+e12  enum  API_OAUTH_TOKEN
+e13  enum  CRYPTOGRAPHIC_ENCLAVE
+e20  enum  READ_ONLY
+e21  enum  READ_WRITE
+e30  enum  STATELESS
+e31  enum  ISOLATED_LINUX
+e32  enum  HOST_NATIVE
+p00  pref  STATUS
+p01  pref  ERROR_TOKEN
+p02  pref  ERROR_MUTATION_FAILED
+p03  pref  PIPELINE
+t00  tok   FS_PERMISSION_DENIED
+t01  tok   ERROR_MUTATION_FAILED
+k00  key   cache_metadata
+k01  key   environment_attestation
+k02  key   deduplication_registry
+k03  key   short_circuit_tokens
+r00  req   REQ-SYS-01
+r01  req   REQ-SYS-02
+r02  req   REQ-SYS-03
+r03  req   REQ-SYS-04
+r04  req   REQ-SYS-05
+r05  req   REQ-SYS-06

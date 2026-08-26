@@ -64,3 +64,13 @@ HOST tier=... fs=... identity=...
 ARTIFACTS <paths or NONE>
 ERRORS <tokens or NONE>
 ```
+
+## GDICT (control-plane codebook)
+
+Do not compress human prose or comments. Intern STATUS enums, compiler diagnostics, and path stems only.
+
+- Static table: `assets/gdict-1.0.0.txt`
+- Session/user LRU + counting Bloom: `scripts/gdict-lru.sh` (`put|hit|get|evict|list|stats|session-end|promote`)
+- Runtime: `$GREEN_WORKSPACE/.runtime/gdict-session.json`, `gdict-user.json`, `gdict-stats.log`
+- Caps: `GDICT_SESSION_CAP` / `GDICT_USER_CAP` (default 512). Bloom: `GDICT_BLOOM_M=8192`, `GDICT_BLOOM_K=4`.
+- Hash-like strings are refused. LRU evicts oldest `last_ts` and decrements Bloom counters.
