@@ -8,6 +8,8 @@ metadata:
 
 # Green Format
 
+Manuscript body is prose: do not run GDICT on chapter text. Receipts and make/compiler tails use `../green-agency/assets/gdict-1.0.0.txt` and `gdict-errors-1.0.0.txt`.
+
 ## REQ-SK03-01 — Prose uniformity
 
 Rewrite markdown to the STYLE_GUIDE in REQUIREMENTS.md section 1:

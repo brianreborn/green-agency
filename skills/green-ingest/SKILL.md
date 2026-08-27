@@ -10,6 +10,8 @@ metadata:
 
 Choose the path from the latest probe `host_tier` / `fs` values.
 
+Do not dump recursive `find` listings into context. Index lines go through REQ-SYS-06 / GDICT (`../green-agency/assets/`). Prose and comments stay uncompressed.
+
 ## REQ-SK02-01 — Enhanced host (recursive index)
 
 When `fs` is `READ_ONLY` or `READ_WRITE`:

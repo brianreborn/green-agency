@@ -10,6 +10,8 @@ metadata:
 
 Do not publish without an explicit user request naming the channel (X, git/GitHub, or flat-file).
 
+Do not commit `$GREEN_WORKSPACE/.runtime/gdict-session.json` or usage JSONL. Ship only `../green-agency/assets/` static codebooks. After publish, `gdict-lru.sh usage compress` is the budget view.
+
 ## REQ-SK04-01 — X dispatch (SuperGrok)
 
 When `host_tier=SUPERGROK_ENGINE` and the user asked to post:

@@ -1,6 +1,14 @@
 # green-agency skills
 
-Fixed order: `green-probe` → `green-bootstrap` → `green-ingest` → `green-format` → `green-deploy`.
-Orchestrator: `green-agency/`.
+Repo: https://github.com/brianreborn/green-agency
 
-Static codebooks live in `green-agency/assets/` (`CODEBOOKS.md`). Session LRU stays in the workspace `.runtime/` and is not committed.
+Fixed order: probe → bootstrap → ingest → format → deploy. Orchestrator: `green-agency/`.
+
+Install: `skills/green-agency/references/INSTALL.md`
+Codec spec: `skills/green-agency/references/REQUIREMENTS-CODEC.md`
+Static tables: `skills/green-agency/assets/` (`CODEBOOKS.md`)
+
+Session LRU and usage JSONL stay in `$GREEN_WORKSPACE/.runtime/` and are not committed.
+
+Providers: `gdict-static`, `gdict-session`, `gdict-user`, `cdn`, `git`, `magnet`, `nft`, `grok-files`, `passthrough`.
+`grok-files` is SuperGrok Files / Grok Computer — private EXTREME storage, not a public CDN.
