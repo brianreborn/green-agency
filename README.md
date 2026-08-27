@@ -2,7 +2,10 @@
 
 Baseline `/skills` for modernizing agents.
 
-Canonical requirements: [`REQUIREMENTS.md`](REQUIREMENTS.md).
+**Start here:** [QUICK-INSTALL.md](QUICK-INSTALL.md)
+
+Canonical requirements: [REQUIREMENTS.md](REQUIREMENTS.md).  
+Codec / usage / grok-files: [skills/green-agency/references/INSTALL.md](skills/green-agency/references/INSTALL.md).
 
 ## Pipeline
 
@@ -13,19 +16,15 @@ Canonical requirements: [`REQUIREMENTS.md`](REQUIREMENTS.md).
 | `green-ingest` | Tree index or interactive ingest + native syntax check |
 | `green-format` | STYLE_GUIDE normalize, `MANUSCRIPT.json`, non-destructive make |
 | `green-deploy` | X dispatch, GitHub push, or flat `MANUSCRIPT.md` |
-| `green-agency` | Orchestrator — run the five skills in order |
+| `green-agency` | Orchestrator + GDICT codebook + usage ledger |
 
-Install for this engine by copying `skills/*` into `~/.grok/skills/` (already done on the authoring SuperGrok host).
+Copy `skills/*` into `~/.grok/skills/` (or the host custom-skill dir).
 
 ## System contracts
 
-REQ-SYS-01..06 live in `skills/green-agency/references/sys-requirements.md`.
+REQ-SYS-01..06: `skills/green-agency/references/sys-requirements.md`.
 
-- Append-only `.runtime/audit.log`
-- Permission probe before writes
-- `.bak` snapshot before overwrite
-- `.runtime/probe_cache.json` short-circuit cache (schema 1.0.0)
-- Local output / compiler proxies — no raw log ingestion
+GDICT intern only control-plane strings (STATUS, diagnostics, paths). No prose.
 
 ## License
 
