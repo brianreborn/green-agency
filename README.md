@@ -1,30 +1,24 @@
-# green-agency
+# green-zkillz
 
-Baseline `/skills` for modernizing agents.
+Adaptive skill pipeline (package formerly named green-agency).
 
-**Start here:** [QUICK-INSTALL.md](QUICK-INSTALL.md)
+**Start here:** [QUICK-INSTALL.md](QUICK-INSTALL.md) · [NAME.md](NAME.md)
 
-Canonical requirements: [REQUIREMENTS.md](REQUIREMENTS.md).  
-Codec / usage / grok-files: [skills/green-agency/references/INSTALL.md](skills/green-agency/references/INSTALL.md).
+Repo path is still `brianreborn/green-agency` until a GitHub rename. Canonical requirements: [REQUIREMENTS.md](REQUIREMENTS.md).
 
 ## Pipeline
 
 | Skill | Role |
 |---|---|
-| `green-probe` | Host tier, privileges, identity posture, short-circuit cache |
-| `green-bootstrap` | Makefile / env synthesis, CI posture, compiler proxy |
-| `green-ingest` | Tree index or interactive ingest + native syntax check |
-| `green-format` | STYLE_GUIDE normalize, `MANUSCRIPT.json`, non-destructive make |
-| `green-deploy` | X dispatch, GitHub push, or flat `MANUSCRIPT.md` |
-| `green-agency` | Orchestrator + GDICT codebook + usage ledger |
+| `green-zkillz` | Package orchestrator (preferred name) |
+| `green-agency` | Legacy alias — same pipeline |
+| `green-probe` | Host tier, privileges, identity, short-circuit cache |
+| `green-bootstrap` | Makefile / env, CI, compiler proxy |
+| `green-ingest` | Tree index or interactive ingest + syntax check |
+| `green-format` | STYLE_GUIDE, `MANUSCRIPT.json`, non-destructive make |
+| `green-deploy` | X, GitHub, or flat `MANUSCRIPT.md` |
 
-Copy `skills/*` into `~/.grok/skills/` (or the host custom-skill dir).
-
-## System contracts
-
-REQ-SYS-01..06: `skills/green-agency/references/sys-requirements.md`.
-
-GDICT intern only control-plane strings (STATUS, diagnostics, paths). No prose.
+GDICT: control-plane only. See `skills/green-agency/`.
 
 ## License
 

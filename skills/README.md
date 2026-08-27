@@ -1,14 +1,8 @@
-# green-agency skills
+# green-zkillz skills
 
-Repo: https://github.com/brianreborn/green-agency
+Package name: **green-zkillz**. Legacy folder `green-agency` still holds scripts and GDICT assets.
 
-Fixed order: probe → bootstrap → ingest → format → deploy. Orchestrator: `green-agency/`.
+Order: probe → bootstrap → ingest → format → deploy.
+Orchestrator: `green-zkillz/` (preferred) or `green-agency/` (alias).
 
-Install: `skills/green-agency/references/INSTALL.md`
-Codec spec: `skills/green-agency/references/REQUIREMENTS-CODEC.md`
-Static tables: `skills/green-agency/assets/` (`CODEBOOKS.md`)
-
-Session LRU and usage JSONL stay in `$GREEN_WORKSPACE/.runtime/` and are not committed.
-
-Providers: `gdict-static`, `gdict-session`, `gdict-user`, `cdn`, `git`, `magnet`, `nft`, `grok-files`, `passthrough`.
-`grok-files` is SuperGrok Files / Grok Computer — private EXTREME storage, not a public CDN.
+Install: repo-root `QUICK-INSTALL.md`.

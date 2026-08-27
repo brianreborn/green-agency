@@ -1,4 +1,4 @@
-# Quick install
+# Quick install — green-zkillz
 
 ```bash
 git clone https://github.com/brianreborn/green-agency.git
@@ -8,25 +8,18 @@ export GDICT_STATIC="$PWD/skills/green-agency/assets"
 chmod +x skills/*/scripts/*.sh skills/green-agency/scripts/*.py
 ```
 
-Point the host skill directory at:
+Copy into the host skill dir (`~/.grok/skills/` on Grok):
 
-`skills/green-probe` `green-bootstrap` `green-ingest` `green-format` `green-deploy` `green-agency`
+`skills/green-zkillz` plus `green-probe` `green-bootstrap` `green-ingest` `green-format` `green-deploy` `green-agency` (legacy).
 
-On Grok: copy those folders into `~/.grok/skills/` (or the platform’s custom-skill path).
-
-Needs: `bash`, `python3`. No pip.
+Needs: bash, python3. No pip.
 
 ```bash
 export GREEN_WORKSPACE=/tmp/green-smoke
 mkdir -p "$GREEN_WORKSPACE"
 skills/green-probe/scripts/probe.sh
-skills/green-agency/scripts/gdict-lru.sh record prompt compress 80 20 gdict-static=1:40:8
 skills/green-agency/scripts/gdict-lru.sh usage compress
 ```
 
-Expect a `STATUS` line and `$GREEN_WORKSPACE/.runtime/gdict-usage.prom` ending in `# EOF`.
-
 Do not commit `.runtime/`.
-
-Longer notes: [skills/green-agency/references/INSTALL.md](skills/green-agency/references/INSTALL.md)  
-SuperGrok Files (optional, off by default): same file, section REQ-REPO-06.
+Full notes: skills/green-agency/references/INSTALL.md
