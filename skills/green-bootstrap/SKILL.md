@@ -10,6 +10,8 @@ metadata:
 
 Requires a `STATUS` line from `green-probe`. If missing, run probe first.
 
+Route compiler/Make tails through `scripts/compiler-proxy.sh`, then intern exact diagnostics against `../green-agency/assets/gdict-errors-1.0.0.txt` (`gdict-static`) before anything reaches the model.
+
 ## REQ-SK01-01 — Configuration synthesis
 
 Write only files justified by the probe:

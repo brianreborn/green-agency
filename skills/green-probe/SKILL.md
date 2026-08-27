@@ -10,6 +10,8 @@ metadata:
 
 Run before any other green-agency skill.
 
+Encode the `STATUS` line with `gdict-static` from `../green-agency/assets/gdict-1.0.0.txt` (do not dump probe JSON into context). Record usage via `../green-agency/scripts/gdict-lru.sh record` when token counts are known.
+
 ## Procedure
 
 1. Set `GREEN_WORKSPACE` to the active project root (`/home/workdir/artifacts` in this engine unless the user names another tree).
