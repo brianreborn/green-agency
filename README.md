@@ -1,25 +1,15 @@
-# green-zkillz
+# Green-Agency has moved
 
-Adaptive skill pipeline (package formerly named green-agency).
+> **Green-Agency is retired. Continue at
+> [brianreborn/green-agentz](https://github.com/brianreborn/green-agentz).**
 
-**Start here:** [QUICK-INSTALL.md](QUICK-INSTALL.md) · [NAME.md](NAME.md)
+Green-Agentz is the canonical project and integration repository. The adaptive
+`/skill` capability layer formerly developed here is now **Green-Zkillz** and
+lives inside Green-Agentz:
 
-Repo path is still `brianreborn/green-agency` until a GitHub rename. Canonical requirements: [REQUIREMENTS.md](REQUIREMENTS.md).
+- [Green-Agentz project](https://github.com/brianreborn/green-agentz)
+- [Green-Zkillz documentation](https://github.com/brianreborn/green-agentz/tree/main/docs/green-zkillz)
+- [Green-Zkillz skills](https://github.com/brianreborn/green-agentz/tree/main/skills)
 
-## Pipeline
-
-| Skill | Role |
-|---|---|
-| `green-zkillz` | Package orchestrator (preferred name) |
-| `green-agency` | Legacy alias — same pipeline |
-| `green-probe` | Host tier, privileges, identity, short-circuit cache |
-| `green-bootstrap` | Makefile / env, CI, compiler proxy |
-| `green-ingest` | Tree index or interactive ingest + syntax check |
-| `green-format` | STYLE_GUIDE, `MANUSCRIPT.json`, non-destructive make |
-| `green-deploy` | X, GitHub, or flat `MANUSCRIPT.md` |
-
-GDICT: control-plane only. See `skills/green-agency/`.
-
-## License
-
-BSD 3-Clause. See `LICENSE`.
+This repository remains available only to preserve historical commits, tags,
+releases, and links. Do not start new work, issues, or pull requests here.
